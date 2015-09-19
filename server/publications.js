@@ -16,5 +16,5 @@ Meteor.publish("projectsInCategory", function(categorySlug) {
 Meteor.publish("project", function(categorySlug, projectSlug) {
   check(categorySlug, String);
   check(projectSlug, String);
-  return Projects.find({ categorySlug: categorySlug, slug: projectSlug });
+  return Projects.find({ categorySlug: categorySlug, slug: projectSlug }, { fields: { description: 0 } });
 });
