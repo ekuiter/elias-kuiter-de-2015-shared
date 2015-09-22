@@ -1,6 +1,6 @@
 Package.describe({
   name: "ekuiter:elias-kuiter-de-shared",
-  version: "0.52.0",
+  version: "0.55.0",
   summary: "Code for elias-kuiter.de shared by frontend and backend",
   documentation: null
 });
