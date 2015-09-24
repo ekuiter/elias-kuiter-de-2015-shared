@@ -1,6 +1,6 @@
 Meteor.publish("projectsWithDetails", function() {
   if (!this.userId)
-    this.error(new Meteor.Error(401));
+    return this.ready();
   return Projects.find();
 });
 
